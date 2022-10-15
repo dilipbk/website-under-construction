@@ -1,0 +1,193 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    max-width: 100vw;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    background-color: #210245;
+}
+
+.container header {
+    text-align: center;
+    margin-top: 2rem;
+}
+
+.container header img {
+    width: 150px;
+    height: auto;
+}
+.under-construction-info {
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    justify-items: center;
+    vertical-align: middle;
+    text-align: center;
+    color: white;
+}
+.under-construction-info h1:first-child {
+    color: #4ca10f;
+    font-size: 4rem;
+}
+.under-construction-info h1:nth-child(2) {
+    color: white;
+    font-size: 2.2rem
+}
+
+.container .under-construction-info .date-notifier {
+    width: 45%;
+    display: flex;
+    text-align: center;
+    justify-items: center;
+    justify-content: space-evenly;
+}
+.container .under-construction-info .date-notifier .date-notifier-div {
+    margin-top: 15px;
+    width: 100px;
+    height: 100px;
+    border: 6px solid white;
+    border-radius: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    line-height: 23px;
+}
+
+.container .under-construction-info .date-notifier .date-notifier-div:first-child {
+    border: 6px solid #5dbfa0;
+}
+
+.container .under-construction-info .date-notifier .date-notifier-div:nth-child(2){
+    border: 6px solid #4183be;
+}
+
+.container .under-construction-info .date-notifier .date-notifier-div:nth-child(3) {
+    border: 6px solid #8d42ae;
+}
+
+.container .under-construction-info .date-notifier .date-notifier-div:last-child {
+    border: 6px solid #ee9b1f;
+}
+
+.container .under-construction-info .date-notifier .date-notifier-div h2 span:first-child{
+    font-size: 1.5rem;
+}
+.container .under-construction-info .date-notifier .date-notifier-div h2 span {
+    font-size: .9rem;
+    font-weight: 500;
+}
+
+.container .footer {
+    padding: 40px 0 0 0;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    height: 80px;
+}
+
+.container .footer .contact-info {
+    display: flex;
+    justify-content: space-evenly;
+    width: 50%;
+    align-items: center;
+    vertical-align: middle;
+    color: rgba(255, 255, 255, .5);
+    font-size: .8rem;
+}
+
+.container .footer .footer-social-media-links {
+    width: 200px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    text-align: center;
+    list-style: none;
+}
+.container .footer .footer-social-media-links li a{
+    color: rgba(255, 255, 255, .4);
+    text-decoration: none;
+    transition: .1s color;
+}
+
+.container .footer .footer-social-media-links li a:hover {
+    color: rgba(255, 255, 255, .7);
+    text-decoration: none;
+}
+.container .footer .copyright-text p{
+    color: rgba(255, 255, 255, .5);
+    font-size: .9rem;
+}
+
+@media screen and (max-width: 985px) {
+    .container .under-construction-info .date-notifier {
+        width: 70%;
+        display: flex;
+        text-align: center;
+        justify-items: center;
+        justify-content: space-evenly;
+    }
+}
+@media screen and (max-width: 700px) {
+    .container header img {
+    width: 150px;
+    height: auto;
+}
+    .container .under-construction-info .date-notifier {
+        width: 100%;
+        display: flex;
+        text-align: center;
+        justify-items: center;
+        justify-content: space-evenly;
+    }
+}
+
+@media screen and (max-width: 525px) {
+    .under-construction-info h1:first-child {
+    color: #4ca10f;
+    font-size: 2.5rem;
+}
+.under-construction-info h1:nth-child(2) {
+    color: white;
+    font-size: 1.7rem;
+}
+.container .footer .contact-info {
+    display: flex;
+    flex-direction: column;
+}
+
+.container .footer .copyright-text p {
+    font-size: .8rem;
+}
+}
+
+@media screen and (max-width: 445px) {
+    .container .under-construction-info .date-notifier {
+        width: 100%;
+        display: flex;
+        text-align: center;
+        justify-items: center;
+        justify-content: space-evenly;
+    }
+
+    .container .under-construction-info .date-notifier .date-notifier-div {
+        width: 80px;
+        height: 80px;
+    }
+}

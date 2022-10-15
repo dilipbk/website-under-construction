@@ -1,0 +1,37 @@
+var DOMdays = document.querySelector('.time-days');
+var DOMhours = document.querySelector('.time-hours');
+var DOMminutes = document.querySelector('.time-minutes');
+var DOMseconds = document.querySelector('.time-seconds');
+
+var countDownDate = new Date("Dec 31, 2020 15:37:25").getTime();
+
+// Updating the count down every 1 second
+var x = setInterval(function() {
+
+  // Get today's date and time
+  var now = new Date().getTime();
+    
+  // Find the distance between now and the website release date
+  var distance = countDownDate - now;
+    
+  // Time calculations for days, hours, minutes and seconds
+  var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+  var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+  var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+  var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+    
+  //updating the text content of #date-notifier on website
+  DOMdays.textContent = days
+  DOMhours.textContent = hours;
+  DOMminutes.textContent = minutes;
+  DOMseconds.textContent = seconds;
+   
+  if (distance < 0) {
+    clearInterval(x);
+    DOMdays.textContent = 0
+    DOMhours.textContent = 0;
+    DOMminutes.textContent = 0;
+    DOMseconds.textContent = 0;
+  }
+}, 1000);
+
